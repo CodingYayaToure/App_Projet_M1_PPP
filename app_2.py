@@ -36,7 +36,8 @@ def display_sidebar():
     st.sidebar.markdown("### Informations")
     st.sidebar.markdown("""
     **Projet proposé par :**
-    - **Tuteur** : Dr. Abou SENE (Email: abou1.sene@unchk.edu.sn) 
+    - **Tuteur** : Dr. Abou SENE
+    - Email: abou1.sene@unchk.edu.sn
     **Étudiant :** Yaya TOURE  
     - Email : yaya.toure@unchk.edu.sn  
     [🔗 LinkedIn](https://www.linkedin.com/in/yaya-toure-8251a4280/)  
