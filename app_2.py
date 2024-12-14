@@ -2,6 +2,11 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 
+
+st.markdown("""
+    # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
+    ## Modélisation Mathématique de la Dynamique Populationnelle
+    """)
 def setup_page_configuration():
     """Configuration de la page Streamlit avec en-tête personnalisé"""
     st.set_page_config(
