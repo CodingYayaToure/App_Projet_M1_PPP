@@ -9,21 +9,40 @@ def setup_page_configuration():
         layout="wide",
         initial_sidebar_state="expanded"
     )
+def display_sidebar():
+    """Affiche le logo et les paramètres dans la barre latérale"""
+    # Ajouter le logo en haut de la barre latérale
+    st.sidebar.image("logo_unchk.png", width=200)  # Remplacez par votre logo
 
-def display_header():
-    """Affiche l'en-tête avec logo et informations universitaires"""
-    col1, col2 = st.columns([1, 3])
+    # Paramètres de simulation
+    st.sidebar.header("🔧 Paramètres de Simulation")
+    population_initiale = st.sidebar.slider(
+        "Population Initiale", 
+        min_value=10**3, 
+        max_value=10**7, 
+        value=10**6
+    )
+    taux_decroissance = st.sidebar.slider(
+        "Taux de Décroissance", 
+        min_value=0.0001, 
+        max_value=0.01, 
+        value=0.001, 
+        step=0.0001
+    )
     
-    with col1:
-        # Remplacez par votre propre logo
-        st.image("logo_unchk.png", width=250)
-     
-    with col2:
-        st.markdown("""
-        ### Master 1 Calcul Scientifique et Modélisation
-        #### 🐟 Simulation Dynamique de Population Piscicole | Projet proposé par Professeur ABOU SENE                                                
+    # Informations sous les paramètres
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### Informations")
+    st.sidebar.markdown("""
+    **Projet supervisé par :**
+    - **Tuteur** : Dr. Abou SENE  
+    **Étudiant :** Yaya TOURE  
+    - Email : yaya.toure@unchk.edu.sn  
+    [🔗 LinkedIn](https://www.linkedin.com/in/yaya-toure-8251a4280/)  
+    [🌐 GitHub](https://github.com/CodingYayaToure)
+    """)
     
-        """)
+    return population_initiale, taux_decroissance
 
 def population_model(t, p0=10**6, r=0.001):
     """
