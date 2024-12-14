@@ -1,10 +1,6 @@
 import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
-st.title("""
-        # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
-        ## Modélisation Mathématique de la Dynamique Populationnelle
-        """)
 
 def setup_page_configuration():
     """Configuration de la page Streamlit avec en-tête personnalisé"""
@@ -34,6 +30,7 @@ def display_sidebar():
         value=0.001, 
         step=0.0001
     )
+        
     
     # Informations sous les paramètres
     st.sidebar.markdown("---")
@@ -46,6 +43,11 @@ def display_sidebar():
      Email : yaya.toure@unchk.edu.sn  
     [🔗 LinkedIn](https://www.linkedin.com/in/yaya-toure-8251a4280/)  
     [🌐 GitHub](https://github.com/CodingYayaToure)
+    st.sidebar.markdown("""
+        # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
+        ## Modélisation Mathématique de la Dynamique Populationnelle
+        """)
+
     """)
     
     return population_initiale, taux_decroissance
