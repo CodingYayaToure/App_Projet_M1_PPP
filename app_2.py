@@ -3,10 +3,6 @@ import numpy as np
 import plotly.graph_objects as go
 
 
-st.markdown("""
-    # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
-    ## Modélisation Mathématique de la Dynamique Populationnelle
-    """)
 def setup_page_configuration():
     """Configuration de la page Streamlit avec en-tête personnalisé"""
     st.set_page_config(
@@ -178,6 +174,11 @@ def create_three_plots(t_values, p_values, p_range, dp_values):
     return fig1, fig2, fig3
 
 def main():
+    
+    st.markdown("""
+        # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
+        ## Modélisation Mathématique de la Dynamique Populationnelle
+        """)
     try:
         setup_page_configuration()
         
