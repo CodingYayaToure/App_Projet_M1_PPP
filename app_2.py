@@ -13,7 +13,7 @@ def setup_page_configuration():
 def display_sidebar():
     """Affiche le logo et les paramètres dans la barre latérale"""
     # Ajouter le logo en haut de la barre latérale
-    st.sidebar.image("logo_unchk.png", width=200)  # Remplacez par votre logo
+    st.sidebar.image("logo_unchk.png", width=250)  # Remplacez par votre logo
 
     # Paramètres de simulation
     st.sidebar.header("🔧 Paramètres de Simulation")
