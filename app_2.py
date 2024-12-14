@@ -9,6 +9,7 @@ def setup_page_configuration():
         layout="wide",
         initial_sidebar_state="expanded"
     )
+    
 def display_sidebar():
     """Affiche le logo et les paramètres dans la barre latérale"""
     # Ajouter le logo en haut de la barre latérale
@@ -167,11 +168,11 @@ def create_three_plots(t_values, p_values, p_range, dp_values):
 
 def main():
     setup_page_configuration()
-    display_header()
+    display_sidebar()
     
     
     # Sidebar pour les paramètres
-    st.sidebar.header("🔧 Paramètres de Simulation")
+    st.sidebar.sidebar("🔧 Paramètres de Simulation")
     population_initiale = st.sidebar.slider(
         "Population Initiale", 
         min_value=10**3, 
