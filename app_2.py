@@ -21,14 +21,8 @@ def display_header():
     with col2:
         st.markdown("""
         ### Master 1 Calcul Scientifique et Modélisation
-        #### 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne                                                  
-        
-        **Équipe du Projet :**
-        - **Tuteur** : Dr. ABOU SENE (Email : abou1.sene@unchk.edu.sn)
-        - **Étudiant** : YAYA TOURE (Email : yaya.toure@unchk.edu.sn)
-        
-        [🔗 LinkedIn](https://www.linkedin.com/in/yaya-toure-8251a4280/) | 
-        [🌐 GitHub](https://github.com/CodingYayaToure)
+        #### 🐟 Simulation Dynamique de Population Piscicole | Projet proposé par Professeur ABOU SENE                                                
+    
         """)
 
 def population_model(t, p0=10**6, r=0.001):
@@ -172,6 +166,18 @@ def main():
         value=0.001, 
         step=0.0001
     )
+
+    # Informations ajoutées sous les paramètres
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### Informations")
+    st.sidebar.markdown("""
+    **Projet supervisé par :**
+    - **Tuteur** : Dr. Abou SENE (Email : abou1.sene@unchk.edu.sn)  
+    **Étudiant :** Yaya TOURE  
+    - Email : yaya.toure@unchk.edu.sn
+    [🔗 LinkedIn](https://www.linkedin.com/in/yaya-toure-8251a4280/)  
+    [🌐 GitHub](https://github.com/CodingYayaToure)
+    """)
 
     # Génération des données
     t_values = np.linspace(0, 5000, 1000)
