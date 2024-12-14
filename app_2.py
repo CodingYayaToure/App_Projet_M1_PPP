@@ -17,11 +17,11 @@ def display_header():
     with col1:
         # Remplacez par votre propre logo
         st.image("logo_unchk.png", width=250)
-    
+     
     with col2:
         st.markdown("""
         ### Master 1 Calcul Scientifique et Modélisation
-        ####                                                   
+        #### 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne                                                  
         
         **Équipe du Projet :**
         - **Tuteur** : Dr. ABOU SENE (Email : abou1.sene@unchk.edu.sn)
@@ -156,12 +156,6 @@ def main():
     setup_page_configuration()
     display_header()
     
-    
-
-    st.markdown("""
-    # 🐟 Simulation Dynamique de Population Piscicole | Une famille de poisson obéit à la loi de croissance malthusienne
-    ## Modélisation Mathématique de la Dynamique Populationnelle
-    """)
     
     # Sidebar pour les paramètres
     st.sidebar.header("🔧 Paramètres de Simulation")
